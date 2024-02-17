@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui code -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+
 </head>
-<body>
-    
+
+<body class="w-11/12 mx-auto">
+    <header>
+        <!-- Navigation Section -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl font-bold">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border-[#1DD100]">Button <span><img
+                                src="images/bus-icon.png" alt="" srcset=""></span></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section    bg-[url('images/banner.png')-->
+        <section class=" bg-[url('images/banner.png')] min-h-[40rem] bg-no-repeat w-full bg-contain rounded-lg">
+            <div class="w-10/12 p-0 md:py-52 m-auto flex flex-col justify-center">
+                <div class="text-center">
+                    <h1 class="">End-to-End Travel With</h1>
+                    <h2 class="">A Travel</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat praesentium, sit asperiores
+                        quae accusamus perspiciatis nostrum molestias! Autem saepe quis enim omnis accusantium?
+                        Voluptatibus reprehenderit perferendis animi. Necessitatibus, iure accusantium.</p>
+                        <a href="#toggle"><button class="btn btn-success">Buy Ticket</button></a>
+                </div>   
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </header>
+    <!-- text-[#1DD100] -->
+    <main>
+        <section></section>
+        <!-- Modem Section  -->
+        <section id="toggle" class="hidden">
+            <div class="card w-1/2 bg-base-100 shadow-xl mx-auto my-52">
+                <figure class="px-10 pt-10">
+                  <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-[#27AE60] ">Success</h2>
+                  <p class="font-semibold ">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you.</p>
+                  <p>Shortly you will find a confirmation in your email.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-success text-white">Continue</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
