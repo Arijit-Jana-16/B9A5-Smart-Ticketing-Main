@@ -27,22 +27,24 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="text-xl font-bold">daisyUI</a>
+                    <a class="text-xl font-bold">A Paribahan</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Search</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border-[#1DD100]">Button <span><img
+                    <a class="btn text-[#1DD100] bg-[#1DD1001A] border-[#1DD100]">Bus<span><img
                                 src="images/bus-icon.png" alt="" srcset=""></span></a>
                 </div>
             </div>
@@ -52,15 +54,15 @@
             <div class="hero-overlay bg-opacity-40 rounded-3xl"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md mb-28">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <h2 class="mb-5 text-5xl font-bold">Hello there</h2>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <a href="#toggle"><button class="btn btn-primary">Get Started</button></a>
+                    <h1 class="mb-5 text-4xl font-bold">End-to-End Travel With</h1>
+                    <h2 class="mb-5 text-4xl font-bold text-[#1DD100]">A Paribahan</h2>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+                    <button onclick="scrolldiv()" class="btn btn text-black bg-[#1cd100] border-none">Get Started</button>
                 </div>
             </div>
         </div>
     </header>
+    <!-- https://meet.google.com/xoq-ufwm-vyb -->
     <!-- text-[#1DD100] -->
     <main class="w-11/12 mx-auto">
         <!-- Ticket Section -->
@@ -68,7 +70,7 @@
            <div class="my-5">
             <h2 class="text-4xl font-extrabold text-center"> Best offers for you</h2>
             <!-- Coupon section -->
-            <div class="my-5">
+            <div class="my-5 flex justify-center">
                 <div class="flex flex-col justify-evenly lg:flex-row gap-5 max-w-screen-sm lg:max-w-7xl">
                     <div class="card card-side bg-amber-500	 shadow-xl grid grid-cols-12 items-center justify-evenly ">
                         <div class="col-span-7 mx-auto w-11/12 text-center">
@@ -97,13 +99,13 @@
                 </div>
             </div>
             <div class="flex justify-center"> 
-                <button class="btn btn-outline btn-success ">See all offers</button>
+                <button class="btn text-[#1DD100] bg-[#1DD1001A] border-[#1DD100]">See all offers</button>
             </div>
            </div>
-            <section class=" border-solid rounded-lg shadow-xl border-t-2 border-t-green-300 my-5">
+            <section id="booking-section" class=" border-solid rounded-lg shadow-xl border-t-4 border-t-green-300 my-5">
                 <div class="text-center " id="toggle">
                     <h2 class="mb-5 text-5xl font-bold">A Paribahan</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quasi.</p>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
 
                 </div>
                 <!-- bus details section -->
@@ -120,7 +122,7 @@
                                 </div>
                                 <div class="flex gap-1 items-center">
                                     <a class="btn text-[#1DD100] bg-[#1DD1001A] border-[#1DD100]"><span><img
-                                        src="images/seat-green.png" alt="" srcset=""></span><span>40</span> Seats Available</a>
+                                        src="images/seat-green.png" alt="" srcset=""></span><span id="seatCount">40</span> Seats Available</a>
                                 </div>
                             </div>
 
@@ -161,6 +163,7 @@
                 <!-- Ticket booking section -->
                 <div class="hero min-h-screen lg:shadow rounded-2xl">
                     <div class="hero-content flex flex-col lg:flex-row lg:items-start p-0">
+                        <!-- seat section -->
                         <div class="border-dashed pb-5 lg:border-r-2 lg:border-r-slate-500 lg:px-5 h-full">
                             <div>
                                 <div class="mb-5 border-dashed border-b-2 border-b-slate-500 py-5">
@@ -180,81 +183,81 @@
                             <div class="flex flex-col gap-y-6">
                                 <div class="flex  gap-2 lg:gap-16 my-1 w-full items-center justify-center">
                                     <p class="invisible">A</p>
-                                    <kbd class="kbd px-4 lg:px-8 invisible">A1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8 invisible">A2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8 invisible">A3</kbd>
+                                    <button class="kbd px-4 lg:px-8 invisible">A1</button>
+                                    <button class="kbd px-4 lg:px-8 invisible">A2</button>
+                                    <button class="kbd px-4 lg:px-8 invisible">A3</button>
                                     <button class="kbd px-4 lg:px-8" disabled><img src="images/download.png" alt="" srcset=""
                                             class="h-5 w-5"></button>
                                 </div>
                                 <div class="flex justify-center gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>A</p>
-                                    <kbd class="kbd px-4 lg:px-8">A1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">A2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">A3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">A4</kbd>
+                                    <button  id="A1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">A1</button >
+                                    <button id="A2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">A2</button>
+                                    <button id="A3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">A3</button>
+                                    <button id="A4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">A4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>B</p>
-                                    <kbd class="kbd px-4 lg:px-8">B1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">B2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">B3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">B4</kbd>
+                                    <button id="B1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">B1</button>
+                                    <button id="B2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">B2</button>
+                                    <button id="B3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">B3</button>
+                                    <button id="B4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">B4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>C</p>
-                                    <kbd class="kbd px-4 lg:px-8">C1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">C2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">C3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">C4</kbd>
+                                    <button id="C1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">C1</button>
+                                    <button id="C2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">C2</button>
+                                    <button id="C3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">C3</button>
+                                    <button id="C4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">C4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>D</p>
-                                    <kbd class="kbd px-4 lg:px-8">D1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">D2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">D3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">D4</kbd>
+                                    <button id="D1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">D1</button>
+                                    <button id="D2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">D2</button>
+                                    <button id="D3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">D3</button>
+                                    <button id="D4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">D4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>E</p>
-                                    <kbd class="kbd px-4 lg:px-8">E1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">E2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">E3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">E4</kbd>
+                                    <button id="E1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">E1</button>
+                                    <button id="E2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">E2</button>
+                                    <button id="E3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">E3</button>
+                                    <button id="E4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">E4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>F</p>
-                                    <kbd class="kbd px-4 lg:px-8">F1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">F2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">F3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">F4</kbd>
+                                    <button id="F1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">F1</button>
+                                    <button id="F2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">F2</button>
+                                    <button id="F3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">F3</button>
+                                    <button id="F4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">F4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>G</p>
-                                    <kbd class="kbd px-4 lg:px-8">G1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">G2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">G3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">G4</kbd>
+                                    <button id="G1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">G1</button>
+                                    <button id="G2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">G2</button>
+                                    <button id="G3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">G3</button>
+                                    <button id="G4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">G4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>H</p>
-                                    <kbd class="kbd px-4 lg:px-8">H1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">H2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">H3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">H4</kbd>
+                                    <button id="H1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">H1</button>
+                                    <button id="H2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">H2</button>
+                                    <button id="H3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">H3</button>
+                                    <button id="H4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">H4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>I</p>
-                                    <kbd class="kbd px-4 lg:px-8">I1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">I2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">I3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">I4</kbd>
+                                    <button id="I1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">I1</button>
+                                    <button id="I2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">I2</button>
+                                    <button id="I3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">I3</button>
+                                    <button id="I4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">I4</button>
                                 </div>
                                 <div class="flex justify-center  gap-2 lg:gap-16 my-1 w-full items-center">
                                     <p>J</p>
-                                    <kbd class="kbd px-4 lg:px-8">J1</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">J2</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">J3</kbd>
-                                    <kbd class="kbd px-4 lg:px-8">J4</kbd>
+                                    <button id="J1" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">J1</button>
+                                    <button id="J2" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">J2</button>
+                                    <button id="J3" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">J3</button>
+                                    <button id="J4" onclick="setBackgroundColor(this.id)" class="kbd px-4 lg:px-8 unique">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -263,70 +266,53 @@
                                 <h3 class="text-2xl font-bold">Select Your Seat</h3>
                             </div>
                             <!-- ticket view section -->
-                            <form class="card shadow-2xl bg-zinc-200 mt-5">
+                            <div class="card shadow-2xl bg-zinc-200 mt-5">
                                 <div class="card-body overflow-x-auto p-2">
                                     <table class="table">
                                         <!-- head -->
                                         <thead>
                                             <tr>
                                                 <th>Seat <span
-                                                        class="indicator-item badge badge-secondary bg-[#1DD100] border-none">0</span>
+                                                        class="indicator-item badge badge-secondary bg-[#1DD100] border-none" id="seat-counter">0</span>
                                                 </th>
                                                 <th>Job</th>
                                                 <th>Favorite Color</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <!-- row 1 -->
-                                            <tr>
-                                                <td>A1</td>
-                                                <td>Economy</td>
-                                                <td>550</td>
-                                            </tr>
-                                            <!-- row 2 -->
-                                            <tr>
-                                                <td>B1</td>
-                                                <td>Economy</td>
-                                                <td>550</td>
-                                            </tr>
-                                            <!-- row 3 -->
-                                            <tr>
-                                                <td>F1</td>
-                                                <td>Economy</td>
-                                                <td>550</td>
-                                            </tr>
+                                        <tbody id="fairTable">
+                                           
                                         </tbody>
                                     </table>
                                 </div>
                                 <!-- total price -->
                                 <div class="flex justify-between w-11/12 mx-auto my-3">
                                     <p class="font-bold">Total Price</p>
-                                    <p class="font-bold">INR <Span>1100</Span></p>
+                                    <p class="font-bold">INR <Span id="total-price">0</Span></p>
                                 </div>
-                                <div class="input input-bordered flex items-center lg:gap-2 lg:w-10/12 mx-auto ">
-                                    <input type="text" class="grow" placeholder="Search" />
-                                    <button class="btn btn-success btn-sm">Success</button>
+                                <!-- Apply coupon -->
+                                <div class="input input-bordered flex items-center lg:gap-2 lg:w-10/12 mx-auto " id="coupon-box">
+                                    <input type="text" class="grow" placeholder="Search" id="coupon-input"/>
+                                    <button onclick="couponValidator()" id="coupon-apply" class="btn btn-success btn-sm bg-[#1cd100] btn-disabled">Apply</button>
                                 </div>
                                 <!-- grand total -->
                                 <div class="flex justify-between w-11/12 mx-auto my-3">
                                     <p class="font-bold">Grand Total</p>
-                                    <p class="font-bold">INR <Span>1100</Span></p>
+                                    <p class="font-bold">INR <Span id="grand-total">0</Span></p>
                                 </div>
-                            </form>
+                            </div>
                             <!-- passenger details section -->
                             <form class="my-5">
                                 <div class="form-control">
                                     <label class="label">
-                                        <span class="label-text">Passenger Name <sup>*</sup></span>
+                                        <span class="label-text">Passenger Name</span>
                                     </label>
-                                    <input type="text" placeholder="Enter your name" class="input input-bordered"
-                                        required />
+                                    <input type="text" placeholder="Enter your name" class="input input-bordered" />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
-                                        <span class="label-text">Phone Number<sup>*</sup></span>
+                                        <span class="label-text">Phone Number<sup class="text-lg">*</sup></span>
                                     </label>
-                                    <input type="password" placeholder="Enter your phone number"
+                                    <input onkeyup="bookNow()" id="phone-number" type="tel" placeholder="Enter your phone number"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -337,7 +323,7 @@
                                         required />
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button class="btn btn-primary">Login</button>
+                                    <button id="Book-Now" onclick="bookingHide()" class="btn  bg-[#1cd100] btn-disabled">Complete Booking</button>
                                 </div>
                             </form>
                         </div>
@@ -346,8 +332,9 @@
             </section>
         </section>
         <!-- Modem Section  -->
-        <section class="hidden">
-            <div class="card w-1/2 bg-base-100 shadow-xl mx-auto my-52">
+        <section id="booking-successful" class="hidden">
+           <div>
+            <div class="card lg:w-1/2 bg-base-100 shadow-xl mx-auto my-52">
                 <figure class="px-10 pt-10">
                     <img src="images/success.png" alt="Shoes" class="rounded-xl" />
                 </figure>
@@ -357,20 +344,21 @@
                         best service and deals for you.</p>
                     <p>Shortly you will find a confirmation in your email.</p>
                     <div class="card-actions">
-                        <button class="btn btn-success text-white">Continue</button>
+                        <button  class="btn btn-success text-white">Continue</button>
                     </div>
                 </div>
             </div>
+           </div>
         </section>
     </main>
     <footer
         class="footer p-10 bg-black text-base-content text-white flex flex-col lg:flex-row items-center	lg:justify-between">
-        <nav class=" text-center">
-            <h6 class=" text text-lg">Services</h6>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, voluptas!</p>
+        <nav class="">
+            <p class=" text text-lg">Services</p>
+            <p>A-ticket is a digital platform to make your daily commuting better.</p>
         </nav>
         <nav>
-            <h6 class=" text text-lg">Services</h6>
+            <h6 class=" text text-lg">Download Our App</h6>
             <div class="flex border-solid border-2 border-white p-2 rounded-lg gap-3">
                 <img src="images/playstore.png" alt="" srcset="">
                 <div>
@@ -382,7 +370,7 @@
     </footer>
     <footer class="footer px-10 py-4 border-t bg-black text-white text-base-content border-base-300">
         <aside class="items-center grid-flow-col">
-            <p>ACME Industries Ltd.Providing reliable tech since 1992</p>
+            <p>A Paribahan Ltd.Providing reliable service since 1992</p>
         </aside>
         <nav class="md:place-self-center md:justify-self-end">
             <div class="grid grid-flow-col gap-4">
@@ -392,6 +380,7 @@
             </div>
         </nav>
     </footer>
+    <script src="js file/function.js"></script>
 </body>
 
 </html>
